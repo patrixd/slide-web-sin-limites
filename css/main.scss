@@ -1,0 +1,62 @@
+@import "theme/template/mixins";
+@import "keyframes";
+@import "graphs";
+@import "sections";
+
+.reveal 
+{
+    transition: 1s;
+    h1,
+	h2 
+	{
+	    font-family: 'Titillium Web', Verdana;
+	}
+	section 
+	{
+		img 
+		{
+		    border: 0;
+		    box-shadow: none;
+		    background: none;
+		}
+		&[data-state=animated-clouds] h2 {
+		    text-transform: inherit;
+		    font-weight: bold;
+		    color: #367693;
+		    letter-spacing: 0em;
+		}
+		.hello {
+		    background: rgba(0,0,0,.5);
+		    padding: 2em 3em;
+		    font-size: .9em;
+		    border-radius: 1%;
+		    margin-left: 45%;
+	    	width: 85%;
+			color: white;
+		    text-shadow: 1px 1px 7px black;
+		    .name {
+		        font-weight: bold;
+	    		font-size: 1.5em;
+		    }
+		    p {
+		    	font-size: .9em;
+		    }
+		}
+	}
+} 
+
+
+.animated-clouds .reveal 
+{ 
+    transition: 0s;
+	background-image: url(../img/bg-clouds.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 40s linear infinite;
+    background-color: #C0DFED;
+}
+
+.red-sky .reveal {
+	@include radial-gradient( #FFEBEE, #FFCDD2 );
+}

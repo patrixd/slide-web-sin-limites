@@ -1,0 +1,155 @@
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* https://davidwalsh.name/background-animation-css */
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100% 0; } }
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100% 0; } }
+
+.graphs-wrapper {
+  font-size: 0.6em !important;
+  margin-top: 2em !important; }
+  .graphs-wrapper .reference {
+    text-align: left;
+    padding-top: 1em;
+    font-style: italic; }
+
+/* Bar Graphs */
+.bargraphs h1 {
+  color: #000; }
+
+.bargraphs p {
+  clear: both;
+  padding-top: 10px;
+  font-size: 8pt;
+  color: #666; }
+
+.bar {
+  clear: left;
+  width: 100%; }
+  .bar div.value {
+    float: left;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 4px;
+    margin-top: 8px; }
+  .bar div.lab {
+    padding: 8px 16px 16px 0 !important;
+    width: 26%;
+    float: left;
+    font-style: italic;
+    font-family: arial;
+    text-align: right; }
+
+.bar1, .bar2, .bar3, .bar4, .bar5 {
+  float: left;
+  padding: 16px 0 16px 8px !important;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  margin: -8px 0 0 0 !important; }
+
+.bar1 {
+  background-color: #e61010; }
+
+.bar2 {
+  background-color: #f6ac43; }
+
+.bar3 {
+  background-color: #fef34b; }
+
+.bar4 {
+  background-color: #c6e628; }
+
+.bar5 {
+  background-color: #0066cc; }
+
+/* End Globalstats */
+.html-icon {
+  width: 25%; }
+
+.html-w3c-icon {
+  position: absolute; }
+
+.reveal .html-preview-row {
+  width: 150%;
+  margin-left: -25%;
+  position: relative; }
+
+.reveal pre.html-preview-code {
+  min-height: 15em;
+  background: #3f3f3f; }
+
+.reveal .html-preview-container-column {
+  max-height: 100%;
+  overflow-y: auto;
+  pos: a;
+  position: absolute;
+  right: 0; }
+
+.reveal .html-preview-container {
+  font-family: initial;
+  font-size: 0.6em; }
+  .reveal .html-preview-container h1 {
+    font-size: 2.6em; }
+
+.reveal {
+  -webkit-transition: 1s;
+          transition: 1s; }
+  .reveal h1,
+  .reveal h2 {
+    font-family: 'Titillium Web', Verdana; }
+  .reveal section img {
+    border: 0;
+    box-shadow: none;
+    background: none; }
+  .reveal section[data-state=animated-clouds] h2 {
+    text-transform: inherit;
+    font-weight: bold;
+    color: #367693;
+    letter-spacing: 0em; }
+  .reveal section .hello {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2em 3em;
+    font-size: .9em;
+    border-radius: 1%;
+    margin-left: 45%;
+    width: 85%;
+    color: white;
+    text-shadow: 1px 1px 7px black; }
+    .reveal section .hello .name {
+      font-weight: bold;
+      font-size: 1.5em; }
+    .reveal section .hello p {
+      font-size: .9em; }
+
+.animated-clouds .reveal {
+  -webkit-transition: 0s;
+          transition: 0s;
+  background-image: url(../img/bg-clouds.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  -webkit-animation: animatedBackground 40s linear infinite;
+          animation: animatedBackground 40s linear infinite;
+  background-color: #C0DFED; }
+
+.red-sky .reveal {
+  background: #FFEBEE;
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #FFCDD2), color-stop(100%, #FFEBEE));
+  background: -webkit-radial-gradient(center, circle cover, #FFCDD2 0%, #FFEBEE 100%);
+  background: radial-gradient(center, circle cover, #FFCDD2 0%, #FFEBEE 100%); }

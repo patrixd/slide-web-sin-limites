@@ -1,0 +1,33 @@
+.html-icon {
+	width: 25%;
+}
+.html-w3c-icon {
+	position:absolute;
+    width: 20%;
+}
+
+.reveal {
+	.html-preview-row {
+		width: 150%;
+	    margin-left: -25%;
+        position: relative;
+	}
+	pre.html-preview-code {
+	    min-height: 15em;
+        background: #3f3f3f;
+	}
+	.html-preview-container-column {
+	    max-height: 100%;
+	    overflow-y: auto;
+	    pos: a;
+	    position: absolute;
+	    right: 0;
+	}
+	.html-preview-container {
+		font-family: initial;
+	    font-size: 0.6em;
+	    h1 {
+	        font-size: 2.6em;
+	    }
+	}
+}
