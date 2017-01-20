@@ -1,4 +1,19 @@
 
+/* Image */
+
+.close-iframe {
+    cursor: pointer;
+    height: 1em;
+    position: absolute;
+    right: 0;
+    margin-top: -50px !important;
+    margin-right: 15px !important;
+}
+
+.play {
+    cursor: pointer;
+}
+
 /* Iframe */
 
 iframe {
