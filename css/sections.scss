@@ -72,6 +72,9 @@ section {
     width: 15%;
     top: 0;
 }
+.personas-icon {
+    max-height: 30% !important;
+}
 
 
 /* Iframes */
@@ -80,6 +83,18 @@ section {
 	height: 14em;
 }
 
+.slide-background iframe[src="tendencias/backend.html"],
+.slide-background iframe[src="tendencias/frontend.html"],
+.slide-background iframe[src="tendencias/lenguajes.html"],
+.slide-background iframe[src="tendencias/movil.html"] {
+    position: relative;
+	top: 50%;
+	transform: translateY(-20%);
+}
+
+.iframe-background-content {
+	top: inherit !important;
+}
 
 /* Preview Code */
 .reveal {
