@@ -1,0 +1,64 @@
+
+/* Iframe */
+
+iframe {
+	width: 100%;
+	height: 14em;
+}
+	.iframe-content {
+		overflow-y: scroll !important;
+		background-color: rgba(255,255,255,.8);
+	    padding: 0 1em 1em;
+	    font-size: 2.5em;
+
+		.toc-horizontal {
+			position: fixed;
+		    text-align: center;
+		    width: 100%;
+		    margin: 0;
+		    padding: 1em 0 0;
+		    background-color: rgba(255, 255, 255, 0.8);
+		    top: 0;
+		    left: 0;
+		}
+		table {
+		    margin: 4.5em 1em 1em;
+		}
+	}
+
+/* Scroll box */
+.scrollbox-wrapper {
+	position: relative;
+}
+    .scrollbox {
+        overflow-y: auto;
+    	position: absolute;
+	    height: 250%;
+	    font-size: .7em;
+
+		table {
+			font-size: .7em;
+		}
+    }
+
+/* Lists */
+.reveal ol pre {
+	margin: 1em 0 2em;
+	width: 100%;
+}
+
+/* Modals */
+span[data-toggle=modal] {
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+/* Table of Contents */
+.toc-horizontal {
+    text-align: center;
+	li {
+		display: inline-block;
+	}
+}

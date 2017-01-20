@@ -74,16 +74,21 @@
 						<h2 id="navegadores">Navegadores</h2>
 						<p><img src="/img/navegadores.png" alt="Navegadores"></p>
 						<aside class="notes">
-						- Una página web es solo texto con referencias externas, 
-						los navegadores se encargan de interpretar su código, 
-						de unir todos sus elementos y visualizarla.<br>
+						- Las páginas webs las podemos ver gracias a los navegadores.<br>
 						- Los navegadores más usados son: Chrome, Firefox, Internet Explorer, Safari y Opera.<br>
 						- Podéis ver varios iconos de Internet Explorer porque hasta la versión 10 no comenzó a tener actualizaciones automáticas y ahora está tambien paralelamente Microsoft Edge.<br>
 						- Los navegadores se deben de actualizar porque pueden tener agujeros de seguridad.
 						</aside>
 					</section>
 					<section>
-
+						<h3 id="navegadores">Navegadores</h3>
+						<p><img src="/img/que-es-navegador.png" alt="Que son los Navegadores"></p>
+						<aside class="notes">
+						- Una página web es solo texto con referencias externas, 
+						los navegadores se encargan de interpretar su código, 
+						de unir todos sus elementos y visualizarla.<br>
+						- Por seguridad, es recomendable actualizar los navegadores.
+						</aside>
 					</section>
 					<section>
 						<h3 id="navegadores-stats">Navegadores en el mercado</h2>
@@ -133,24 +138,29 @@
 						</aside>
 					</section>
 				</section> 
-				<section data-state="red-sky">
+				<section data-state="html-sky">
 					<section>
 						<h2 id="html">HTML</h2>
 	    				<img class="html-icon" src="img/html.png" alt="html icon">
-						<img src="img/w3c-small.png" alt="w3c icon" class="html-w3c-icon fragment">
+	    				<div class="html-w3c-icon fragment">
+							<a href="https://www.w3.org/TR/html5/" target="_blank">
+								<img src="img/w3c-small.png" alt="w3c icon">
+							</a>
+	    				</div>
 						<h3>HyperText Markup Language</h3>
 						<aside class="notes">
 						- Lenguaje de marcado para hipertexto<br>
+						- Estándar a cargo del Consorcio WWW o W3C.
 						</aside>
 					</section>
 					<section>
 						<h3 id="html-preview">HTML</h3>
-						<div class="row html-preview-row">
+						<div class="row html-preview-row hidden-xs hidden-sm">
 						    <div class="col-md-6">
-						    	<h4>Code:</h4>
+						    	<h4>Code</h4>
 						    </div>
 						    <div class="col-md-6">
-								<h4>Preview:</h4>
+								<h4>Preview</h4>
 						    </div>
 					    </div>
 						<div class="row html-preview-row">
@@ -179,25 +189,695 @@ La web no tiene límites
 
 							<pre><code>
 								<header>
-								<h1>No es solo texto y enlaces</h1>
-								<h2>La web no tiene límites</h2>
+									<h1>No es solo texto y enlaces</h1>
+									<h2>La web no tiene límites</h2>
 								</header>
 								<figure>
-								   <img src="img/portada.jpg">
+									<a href="https://twitter.com/geekandtechgirl" target="_blank">
+								   		<img src="img/portada.jpg">
+							   		</a>
 								</figure>
 							</code></pre>
 						</aside>
 					</section>
+					<section>
+						<h3 id="html-propiedades">HTML</h3>
+						<span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#modal-html-cheatsheet"></span>						
+						<p>
+							<a href="https://meiert.com/en/indices/html-elements/" target="_blank">Propiedades</a>
+						</p>
+						<iframe src="html-elements.html" name="html-elements-iframe"></iframe>
+					</section>
 				</section> 
-				<section data-markdown>
-    				<script type="text/template">
-					## CSS
-					</script>
+				<section data-state="css-sky">
+					<section>
+						<h2 id="css">CSS</h2>
+	    				<img class="css-icon" src="img/css.png" alt="css icon">
+	    				<div class="css-w3c-icon fragment">
+							<a href="https://www.w3.org/TR/CSS/" target="_blank">
+								<img src="img/w3c-small.png" alt="w3c icon">
+							</a>
+	    				</div>
+						<h3>Cascading Style Sheets</h3>
+						<aside class="notes">
+						- Hojas de Estilo en Cascada<br>
+						- Estándar a cargo del Consorcio WWW o W3C.
+						- Gracias a CSS podemos indicar al navegador como presentar el contenido, <br>
+						asignando propiedades a elementos HTML mediante reglas CSS.
+						- El elemento se indica en las reglas CSS mediante selectores.
+						- Podemos asignarles Fuentes, colores, animaciones..
+						- Incluso estilos no visuales, mediante propiedades de estilo Aural (se puede indicar a los lectores de pantalla usar una voz masculina o femenina que lea el texto).
+						- Nos permite indicar distintos estilos si se cumplen ciertas condiciones, como el tipo de dispositivo o tamaño del navegador.
+						</aside>
+					</section>	
+					<section>
+						<h3 id="css-demo">CSS</h3>
+						<div class="row html-preview-row hidden-xs hidden-sm">
+						    <div class="col-md-6">
+						    	<h4>Code</h4>
+						    </div>
+						    <div class="col-md-6">
+								<h4>Preview</h4>
+						    </div>
+					    </div>
+						<div class="row html-preview-row">
+						    <div class="col-md-6">								
+								<pre class="html-preview-code">
+									<code class="hljs html" data-trim="" contenteditable="true">
+
+<header>
+	<h1>No es solo texto y enlaces</h1>
+	<h2>La web no tiene límites</h2>
+</header>
+<figure>
+	<a href="https://twitter.com/geekandtechgirl" target="_blank">
+   		<img src="img/portada.jpg">
+	</a>
+</figure>
+
+									</code>
+								</pre>
+						    </div>
+						    <div class="col-md-6 html-preview-container-column">
+						    	<div class="html-preview-container">
+<header>
+	<h1>No es solo texto y enlaces</h1>
+	<h2>La web no tiene límites</h2>
+</header>
+<figure>
+	<a href="https://twitter.com/geekandtechgirl" target="_blank">
+   		<img src="img/portada.jpg">
+	</a>
+</figure>
+						    	</div>
+						    </div>
+						</div>
+						<aside class="notes">
+							- Modifiquemos nuestro ejemplo con css:
+							- Los estilos de pueden aplicar en línea en los elementos que modifican, se pueden añadir en la cabecera mediante reglas o se puede referencias a un documento que las contenga.
+							- El documento que contiene un conjunto de estas reglas dentro de un archivo con extensión .css se llama hoja de estilos. También se pueden poner en el mismo documento .html pero no es recomendable mezclar contenido con estilos.
+							- Porque además de mejorar el matenimiento del código, provee más flexibilidad y control en la  presentación. Por ejemplo, permite que varios documentos HTML compartan un mismo estilo usando una sola hoja de estilos separada en un archivo .css, o poder cambiar la presentación modificando solo la referencia a la hoja de estilos.
+							<pre><code>
+<link rel="stylesheet" href="css/ejemplo2.css">
+<style>
+    h2 { text-decoration: underline; }
+    h2.blue { color: #006666; }
+    .invisible { display: none; }
+</style>
+<header>
+	<h1 style="color:#cc0099;">No es solo texto y enlaces</h1>
+	<h2 class="blue">La web no tiene límites</h2>
+</header>
+<figure>
+	<a href="https://twitter.com/geekandtechgirl" target="_blank">
+   		<img src="img/portada.jpg">
+	</a>
+</figure>
+							</code></pre>
+						</aside>
+					</section>	
+					<section data-background-iframe="http://www.csszengarden.com/"></section>	
+					<section data-background-iframe="http://www.csszengarden.com/221/"></section>	
+					<section>
+						<h3 id="css-selectors">CSS</h3>
+						<p>
+							<a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Selectores</a>
+						</p>
+						<div class="scrollbox">						
+							<table>
+							  <tbody><tr>
+							    <th style="width:20%">Selector</th>
+							    <th style="width:20%">Example</th>
+							    <th style="width:52%">Example description</th>
+							    <th>CSS</th>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_class.asp">.<i>class</i></a></td>
+							    <td class="notranslate">.intro</td>
+							    <td>Selects all elements with class="intro"</td>
+							    <td>1</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_id.asp">#<i>id</i></a></td>
+							    <td class="notranslate">#firstname</td>
+							    <td>Selects the element with id="firstname"</td>
+							    <td>1</td>
+							  </tr>  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_all.asp">*</a></td>
+							    <td class="notranslate">*</td>
+							    <td>Selects all elements</td>
+							    <td>2</td>
+							  </tr>
+							  <tr>
+							    <td><i><a target="_blank" href="http://www.w3schools.com/cssref/sel_element.asp">element</a></i></td>
+							    <td class="notranslate">p</td>
+							    <td>Selects all &lt;p&gt; elements</td>
+							    <td>1</td>
+							  </tr>
+							  <tr>
+							    <td><i><a target="_blank" href="http://www.w3schools.com/cssref/sel_element_comma.asp">element,element</a></i></td>
+							    <td class="notranslate">div, p</td>
+							    <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+							    <td>1</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_element_element.asp"><i>element</i> <i>element</i></a></td>
+							    <td class="notranslate">div p</td>
+							    <td>Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+							    <td>1</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_element_gt.asp"><i>element</i>&gt;<i>element</i></a></td>
+							    <td class="notranslate">div &gt; p</td>
+							    <td>Selects all &lt;p&gt; elements where the parent is a &lt;div&gt; element</td>
+							    <td>2</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_element_pluss.asp"><i>element</i>+<i>element</i></a></td>
+							    <td class="notranslate">div + p</td>
+							    <td>Selects all &lt;p&gt; elements that are placed immediately after &lt;div&gt; elements</td>
+							    <td>2</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_gen_sibling.asp"><i>element1</i>~<i>element2</i></a></td>
+							    <td>p ~ ul</td>
+							    <td>Selects every &lt;ul&gt; element that are preceded by a &lt;p&gt; element</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_attribute.asp">[<i>attribute</i>]</a></td>
+							    <td class="notranslate">[target]</td>
+							    <td>Selects all elements with a target attribute</td>
+							    <td>2</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_attribute_value.asp">[<i>attribute</i>=<i>value</i>]</a></td>
+							    <td class="notranslate">[target=_blank]</td>
+							    <td>Selects all elements with target="_blank"</td>
+							    <td>2</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_attribute_value_contains.asp">[<i>attribute</i>~=<i>value</i>]</a></td>
+							    <td class="notranslate">[title~=flower]</td>
+							    <td>Selects all elements with a title attribute containing the word "flower"</td>
+							    <td>2</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_attribute_value_lang.asp">[<i>attribute</i>|=<i>value</i>]</a></td>
+							    <td class="notranslate">[lang|=en]</td>
+							    <td>Selects all elements with a lang attribute value starting with "en"</td>
+							    <td>2</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_attr_begin.asp">[<i>attribute</i>^=<i>value</i>]</a></td>
+							    <td>a[href^="https"]</td>
+							    <td>Selects every &lt;a&gt; element whose href attribute value begins with "https"</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_attr_end.asp">[<i>attribute</i>$=<i>value</i>]</a></td>
+							    <td>a[href$=".pdf"]</td>
+							    <td>Selects every &lt;a&gt; element whose href attribute value ends with ".pdf"</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_attr_contain.asp">[<i>attribute</i>*=<i>value</i>]</a></td>
+							    <td>a[href*="w3schools"]</td>
+							    <td>Selects every &lt;a&gt; element whose href attribute value contains the substring "w3schools"</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_active.asp">:active</a></td>
+							    <td class="notranslate">a:active</td>
+							    <td>Selects the active link</td>
+							    <td>1</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_after.asp">::after</a></td>
+							    <td class="notranslate">p::after</td>
+							    <td>Insert something after the content of each &lt;p&gt; element</td>
+							    <td>2</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_before.asp">::before</a></td>
+							    <td class="notranslate">p::before</td>
+							    <td>Insert something before&nbsp;the content of each &lt;p&gt; element</td>
+							    <td>2</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_checked.asp">:checked</a></td>
+							    <td>input:checked</td>
+							    <td>Selects every checked &lt;input&gt; element</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_disabled.asp">:disabled</a></td>
+							    <td>input:disabled</td>
+							    <td>Selects every disabled &lt;input&gt; element</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_empty.asp">:empty</a></td>
+							    <td>p:empty</td>
+							    <td>Selects every &lt;p&gt; element that has no children (including text nodes)</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_enabled.asp">:enabled</a></td>
+							    <td>input:enabled</td>
+							    <td>Selects every enabled &lt;input&gt; element</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_firstchild.asp">:first-child</a></td>
+							    <td class="notranslate">p:first-child</td>
+							    <td>Selects every &lt;p&gt; element that is the first child of its parent</td>
+							    <td>2</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_firstletter.asp">::first-letter</a></td>
+							    <td class="notranslate">p::first-letter</td>
+							    <td>Selects the first letter of every &lt;p&gt; element</td>
+							    <td>1</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_firstline.asp">::first-line</a></td>
+							    <td class="notranslate">p::first-line</td>
+							    <td>Selects the first line of every &lt;p&gt; element</td>
+							    <td>1</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_first-of-type.asp">:first-of-type</a></td>
+							    <td>p:first-of-type</td>
+							    <td>Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_focus.asp">:focus</a></td>
+							    <td class="notranslate">input:focus</td>
+							    <td>Selects the input element which has focus</td>
+							    <td>2</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_hover.asp">:hover</a></td>
+							    <td class="notranslate">a:hover</td>
+							    <td>Selects links on mouse over</td>
+							    <td>1</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_in-range.asp">:in-range</a></td>
+							    <td class="notranslate">input:in-range</td>
+							    <td>Selects input elements with a value within a specified range</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_invalid.asp">:invalid</a></td>
+							    <td class="notranslate">input:invalid</td>
+							    <td>Selects all input elements with an invalid value</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_lang.asp">:lang(<i>language</i>)</a></td>
+							    <td class="notranslate">p:lang(it)</td>
+							    <td>Selects every &lt;p&gt; element with a lang attribute equal to "it" (Italian)</td>
+							    <td>2</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_last-child.asp">:last-child</a></td>
+							    <td>p:last-child</td>
+							    <td>Selects every &lt;p&gt; element that is the last child of its parent</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_last-of-type.asp">:last-of-type</a></td>
+							    <td>p:last-of-type</td>
+							    <td>Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_link.asp">:link</a></td>
+							    <td class="notranslate">a:link</td>
+							    <td>Selects all unvisited links</td>
+							    <td>1</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_not.asp">:not(<i>selector</i>)</a></td>
+							    <td>:not(p)</td>
+							    <td>Selects every element that is not a &lt;p&gt; element</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_nth-child.asp">:nth-child(<i>n</i>)</a></td>
+							    <td>p:nth-child(2)</td>
+							    <td>Selects every &lt;p&gt; element that is the second child of its parent</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_nth-last-child.asp">:nth-last-child(<i>n</i>)</a></td>
+							    <td>p:nth-last-child(2)</td>
+							    <td>Selects every &lt;p&gt; element that is the second child of its parent, counting from the last child</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_nth-last-of-type.asp">:nth-last-of-type(<i>n</i>)</a></td>
+							    <td>p:nth-last-of-type(2)</td>
+							    <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent, counting from the last child</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_nth-of-type.asp">:nth-of-type(<i>n</i>)</a></td>
+							    <td>p:nth-of-type(2)</td>
+							    <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_only-of-type.asp">:only-of-type</a></td>
+							    <td>p:only-of-type</td>
+							    <td>Selects every &lt;p&gt; element that is the only &lt;p&gt; element of its parent</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_only-child.asp">:only-child</a></td>
+							    <td>p:only-child</td>
+							    <td>Selects every &lt;p&gt; element that is the only child of its parent</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_optional.asp">:optional</a></td>
+							    <td class="notranslate">input:optional</td>
+							    <td>Selects input elements with no "required" attribute</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_out-of-range.asp">:out-of-range</a></td>
+							    <td class="notranslate">input:out-of-range</td>
+							    <td>Selects input elements with a value outside a specified range</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_read-only.asp">:read-only</a></td>
+							    <td class="notranslate">input:read-only</td>
+							    <td>Selects input elements with the "readonly" attribute specified</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_read-write.asp">:read-write</a></td>
+							    <td class="notranslate">input:read-write</td>
+							    <td>Selects input elements with the "readonly" attribute NOT specified</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_required.asp">:required</a></td>
+							    <td class="notranslate">input:required</td>
+							    <td>Selects input elements with the "required" attribute specified</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_root.asp">:root</a></td>
+							    <td>:root</td>
+							    <td>Selects the document's root element</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_selection.asp">::selection</a></td>
+							    <td>::selection</td>
+							    <td>Selects the portion of an element that is selected by a user</td>
+							    <td>&nbsp;</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_target.asp">:target</a></td>
+							    <td>#news:target </td>
+							    <td>Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_valid.asp">:valid</a></td>
+							    <td class="notranslate">input:valid</td>
+							    <td>Selects all input elements with a valid value</td>
+							    <td>3</td>
+							  </tr>
+							  <tr>
+							    <td><a target="_blank" href="http://www.w3schools.com/cssref/sel_visited.asp">:visited</a></td>
+							    <td class="notranslate">a:visited</td>
+							    <td>Selects all visited links</td>
+							    <td>1</td>
+							  </tr>
+							</tbody></table>
+						</div>
+					</section>
+					<section>
+						<h3 id="css-especifidad">CSS</h3>
+						<p>
+							<a href="https://es.m.wikipedia.org/wiki/Hoja_de_estilos_en_cascada" target="_blank">Prioridades</a>
+						</p>
+						<div class="scrollbox">		
+							<table>
+							<tbody><tr><th>Prioridad</th>
+							<th>Tipo de origen de CSS</th>
+							<th>Descripción</th>
+							</tr><tr><td>1</td>
+							<td>Importancia</td>
+							<td>La anotación ‘<code>!important</code>’ sobreescribe la prioridad anterior</td>
+							</tr><tr><td>2</td>
+							<td>Inline</td>
+							<td>Un estilo aplicado a un elemento HTML por medio del atributo 'style'</td>
+							</tr><tr><td>3</td>
+							<td>Media Type</td>
+							<td>Una propiedad aplica a todas las media types, a menos que un media type específico CSS esté definido</td>
+							</tr><tr><td>4</td>
+							<td>Definido por el usuario</td>
+							<td>La mayoría de los navegadores tienen esta característica de accesibilidad: un estilo CSS definido por el usuario</td>
+							</tr><tr><td>5</td>
+							<td><span data-toggle="modal" data-target="#modal-css-especifidad">Especificidad del selector</td>
+							<td>Un selector contextual específico (<code>#heading p</code>) sobreescribe una definicón general (<code>p</code>)</td>
+							</tr><tr><td>6</td>
+							<td>Orden de las reglas</td>
+							<td>La última regla especificada tiene una mayor prioridad</td>
+							</tr><tr><td>7</td>
+							<td>Herencia</td>
+							<td>Si una propiedad no está especificada, es heredada del elemento padre</td>
+							</tr><tr><td>8</td>
+							<td>Definición de propiedad CSS en el documento HTML</td>
+							<td>Una regla CSS común sobreescribe el valor del navegador</td>
+							</tr><tr><td>9</td>
+							<td>Por defecto del navegador</td>
+							<td>La prioridad más baja: estos valores son determinados por las especificaciones iniciales de la W3C</td>
+							</tr></tbody></table>
+						</div>
+						<aside class="notes">
+						- Hay propiedades que se heredan en CSS y otras que no. Ejemplo, el color se hereda de etiquetas padres a hijos. 
+						- Cuando no se especifica un valor para un elemento de una propiedad heredable, el elemento toma el valor calculado de la propiedad de su elemento padre. Sólo los elementos raíz de un documento obtienen el valor inicial dado en el resumen de la propiedad.
+						- Si no se especifica un valor para una propiedad no heredable, el elemento toma el valor inicial de dicha propiedad. Ejemplo, borde no se hereda y toma por defecto el valor que indica que no hay borde.
+						</aside>
+					</section>	
+					<section>
+						<h3 id="css-especifidad">CSS</h3>
+						<p>
+							<a href="https://meiert.com/en/indices/css-properties/" target="_blank">Propiedades</a>
+						</p>
+						<iframe src="css-elements.html" name="css-elements-iframe"></iframe>
+						<aside class="notes">
+							<strong>
+							- CSS se ha creado en varios niveles y perfiles. <br>
+							- Cada nivel de CSS se construye sobre el anterior, generalmente añadiendo funciones.<br>
+							</strong>
+							- Los perfiles son parte de uno o varios niveles de CSS definidos para un dispositivo o interfaz particular.<br>
+							- A diferencia de CSS2 y CSS1, CSS3 se ha dividido en módulos. Teniendo como ventaja una aceptación más rápida que en las especificaciones anteriores. CSS2 tardó 4 años en tener una revisión oficial (CSS2.1 en 2011 desde el 2008), y ahora están trabajando en la revisión 2.<br>
+							- Cada módulo de CSS3 añade nuevas funcionalidades a las definidas en CSS2, de manera que se conservan las anteriores manteniendo la compatibilidad.
+						</aside>
+					</section>
 				</section> 
+				<section>
+					<section>
+						<h2 id="dom">DOM</h2>
+						<img src="img/dom-tree.png" class="dom-icon" alt="DOM image">
+	    				<div class="dom-w3c-icon fragment">
+							<a href="https://www.w3.org/TR/CSS/" target="_blank">
+								<img src="img/w3c-small.png" alt="w3c icon">
+							</a>
+	    				</div>
+						<h3>Document Object Model</h3>
+						<aside class="notes">
+							- <strong>Modelo de Objetos del Documento</strong><br>
+							- A través del DOM, los programas pueden acceder y modificar el contenido, estructura y estilo de los documentos HTML y XML.<br>
+							- El responsable del DOM es el World Wide Web Consortium (W3C).<br><br><br>
+							- Imagen: https://www.mediaevent.de/javascript/DOM.html
+						</aside>
+					</section>
+					<section>
+						<h3 id="dom">DOM</h3>
+						<p>Usado para visualizar las páginas web por el navegador</p>
+						<img src="img/rendering.png">
+						<aside class="notes">
+							- Cuando el navegador muestra una página web:<br>
+							- Carga los elementos HTML en el DOM en memoria y los combina con sus estilos CSS.<br>
+							- Finalmente la visualiza.<br><br><br>
+							- Imagen: https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works
+						</aside>
+					</section>
+					<section>
+						<h3 id="dom-tree">DOM</h1>
+						<svg width="100%" height="100%" viewBox="0 0 1300 710">
+						<title>DOM Tree Nodes, parentNode, childNode, siblings, nextSibling</title>
+						<path d="m 491.4,42.58 0,64.22 -341.7,0 a 1.5,1.5 0 0 0 -0.1,0 1.5,1.5 0 0 0 -1.4,1.5 l 0,151 -84.78,0 a 1.5,1.5 0 0 0 -0.15,0 1.5,1.5 0 0 0 -1.35,1.5 l 0,67.1 3,0 0,-65.6 169.08,0 0,65.6 3,0 0,-67.1 a 1.5,1.5 0 0 0 -1.5,-1.5 l -84.3,0 0,-149.5 677.1,0 0,149.5 -314.2,0 a 1.5,1.5 0 0 0 -0.2,0 1.5,1.5 0 0 0 -1.3,1.5 l 0,67.1 3,0 0,-65.6 194,0 0,163.1 -76.5,0 a 1.5,1.5 0 0 0 -0.2,0 1.5,1.5 0 0 0 -1.3,1.5 l 0,67.1 3,0 0,-65.6 165.1,0 0,65.6 3,0 0,-67.1 a 1.5,1.5 0 0 0 -1.5,-1.5 l -88.6,0 0,-163.1 211,0 0,60 3,0 0,-60 199.4,0 0,163.1 -77,0 a 0,0 0 0 0 0,0 1.5,1.5 0 0 0 -1,1.5 l 0,201 2,0 0,-199.5 162,0 0,199.5 2,0 0,-201 a 1.5,1.5 0 0 0 -1,-1.5 l -83,0 0,-164.6 a 1.5,1.5 0 0 0 -2,-1.6 1.5,1.5 0 0 0 0,0.1 l -296.7,0 0,-151 a 1.5,1.5 0 0 0 -1.5,-1.5 l -335.4,0 0,-64.22 -3,0 z" style="fill:#b3b3b3"></path><rect width="136" height="76" rx="8" x="424" y="0" style="fill:#e0ecec"></rect><rect width="136" height="76" rx="8" x="82" y="151" style="fill:#e0ecec"></rect><rect width="136" height="76" rx="8" x="762" y="151" style="fill:#e0ecec"></rect><rect width="136" height="76" rx="8" x="0" y="312" style="fill:#e0ecec"></rect><rect width="136" height="76" rx="8" x="170" y="312" style="fill:#e0ecec"></rect><rect width="136" height="76" rx="8" x="444" y="312" style="fill:#e0ecec"></rect><rect width="136" height="76" rx="8" x="644" y="312" style="fill:#e0ecec"></rect><rect width="136" height="76" rx="8" x="855" y="312" style="fill:#e0ecec"></rect><rect width="136" height="76" rx="8" x="1058" y="312" style="fill:#e0ecec"></rect><rect width="136" height="76" rx="8" x="561" y="476" style="fill:#e0ecec"></rect><rect width="136" height="76" rx="8" x="733" y="476" style="fill:#e0ecec"></rect><rect width="136" height="76" rx="8" x="979" y="476" style="fill:#e0ecec"></rect><rect width="136" height="76" rx="8" x="1146" y="476.3" style="fill:#e0ecec"></rect>
+						<text x="450" y="42" font-size="40">html</text>
+						<text x="101" y="195" font-size="40">head</text>
+						<text x="781" y="195" font-size="40">body</text>
+						<text x="17" y="357" font-size="40">title</text><text x="179" y="357" font-size="40">meta</text><text x="473" y="357" font-size="40">nav</text><text x="677" y="357" font-size="40">div</text><text x="582" y="525" font-size="40">form</text><text x="778" y="525" font-size="40">ul</text><text x="866" y="357" font-size="40">section</text><text x="1069" y="357" font-size="40">section</text><text x="1027" y="525" font-size="40">h1</text><text x="1204" y="525" font-size="40">p</text><rect width="171" height="76" x="1129" y="611" style="fill:#fea"></rect><text x="1135" y="632" font-size="18">Texto...</text><text x="1135" y="652" font-size="18">Otros nodos hijos...</text>
+						<text x="1135" y="672" font-size="18">Atributos</text><rect width="171" height="76" x="953" y="611" style="fill:#fea"></rect>
+						<text x="978" y="632" font-size="18">Título sección</text>
+						<text x="292" y="200" font-size="36" fill="#d46a6a">parentNode – childNode</text>
+						<path d="m 231,182 29,29 0,-10 76,44 1,-2 -76,-44 9,-5 -40,-10 z" style="fill:#d46a6a"></path><path d="m 337,248 -76,44 -0,-10 -29,29 40,-10 -9,-5 76,-44 -1,-2 z" style="fill:#d46a6a"></path>
+						<text x="15" y="452" font-size="36" fill="#d46a6a">parentNode – childNode</text><path d="m 425.9,445.8 -1.5,2.6 76.5,44.1 -9.5,5.9 40.4,10.4 -29.3,-29.7 -0.3,10.7 -76.3,-44 z" style="fill:#d46a6a"></path><path d="m 596.4,382.3 7.2,7.7 -179.1,48 0.8,2.8 179.4,-47.9 -2.6,10.7 36,-21.1 -41.7,-0.2 z" style="fill:#d46a6a"></path><path d="m 786.5,562.1 -29.6,29.3 10.6,0.3 -43.9,76.3 2.6,1.5 44,-76.5 5.9,9.5 10.4,-40.4 z" style="fill:#d46a6a"></path><path d="m 657.3,562.2 10.5,40.4 5.9,-9.5 44,76.4 2.6,-1.5 -43.9,-76.2 10.6,-0.3 -29.7,-29.3 z" style="fill:#d46a6a"></path><text x="645" y="698" font-size="34" fill="#d46a6a">nextSibling</text><path d="m 1020,197.1 -44.6,76.6 -6.3,-9.6 -10,40.4 29,-29.3 -9.9,-0.3 43.8,-76.2 -2,-1.6 z" style="fill:#d46a6a"></path><path d="m 1027,197.1 -2,1.6 44,76.1 -11,0.3 30,29.3 -10,-40.4 -6,9.9 -45,-76.8 z" style="fill:#d46a6a"></path><text x="972" y="186" font-size="36" fill="#d46a6a">siblings</text>
+						</svg>
+						<aside class="notes">
+							- Se carga en un objeto en estructura de árbol, donde los nodos representan partes del documento. <br>
+							- Los nodos se puede crear, modificar y borrar. <br>
+							- Y se pueden escuchar eventos que ocurren sobre dichos nodos. <br>
+							- Podemos modificar el DOM gracias al lenguaje de programación Javascript. <br><br><br>
+							- SVG: https://www.mediaevent.de/javascript/DOM.html
+						</aside>
+					</section>
+				</section>
 				<section data-markdown>
     				<script type="text/template">
 					## JAVASCRIPT
 					</script>
+				</section> 
+				<section>
+					<section>
+						<h2 id="novedades">Novedades</h2>
+						<img src="img/html5-css3-js.png" class="html5-css3-js-icon" alt="HTML5 CSS3 JS image">
+						<h3>HTML5, Javascript y CSS3</h3>
+						<aside class="notes">
+							- Seguro que todos habéis oido hablar de HTML5 o CSS3, veamos las últimas versiones y que aporta cada uno de ellos<br>
+						</aside>
+					</section>
+					<section data-state="html-sky">
+						<h3 id="html5-news">HTML5</h3>
+						<div class="row html5-news-content">
+							<div class="col-md-4">
+								<figure>
+									<img src="img/semantica.png" alt="Semantica HTML5 icon">
+									<figcaption>Semántica</figcaption>
+								</figure>
+							</div>
+							<div class="col-md-4">
+								<figure>
+									<img src="img/canvas.png" alt="Graficos HTML5 icon">
+									<figcaption>Gráficos y 3D</figcaption>
+								</figure>
+							</div>
+							<div class="col-md-4">
+								<figure>
+									<img src="img/multimedia.png" alt="Multimedia HTML5 icon">
+									<figcaption>Multimedia</figcaption>
+								</figure>
+							</div>
+							<div class="col-md-4">
+								<figure>
+									<img src="img/dispositivos.png" alt="Dispositivos HTML5 icon">
+									<figcaption>Acceso a Dispositivos</figcaption>
+								</figure>
+							</div>
+							<div class="col-md-4">
+								<figure>
+									<img src="img/rendimiento.png" alt="Rendimiento HTML5 icon">
+									<figcaption>Rendimiento</figcaption>
+								</figure>
+							</div>
+							<div class="col-md-4">
+								<figure>
+									<img src="img/almacenamiento.png" alt="Almacenamiento HTML5 icon">
+									<figcaption>Offline y Almacenamiento</figcaption>
+								</figure>
+							</div>
+						</div>
+						<aside class="notes">
+							- La versión 5 de HTML se publicó en el 2014.<br>
+						</aside>
+					</section>
+					<section data-state="html-sky">
+						<h3 id="html5-elements-support">HTML5</h3>
+						<span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#modal-html5-elements-support"></span>
+						<img src="img/elements-support.jpg" alt="Browsers supported elements">
+						<aside class="notes">
+							- Pero no todos los navegadores soportan todas las novedades del estándar de HTML5, aquí podéis ver los navegadores que comenzaron a soportarlo y las funcionalidades.	<br><br><br>
+							- Imagen: https://www.webenertia.com/blog/html5-html5-question/						
+						</aside>
+					</section>
+					<section data-state="html-sky">
+						<h3 id="html5-caniuse">HTML5</h3>
+						<iframe src="http://caniuse.com/"></iframe>
+						<aside class="notes">
+							- Cuando se usa una funcionalidad de HTML5 se aconseja comprobar que navegadores la soportan en caso de estar restringidos a ciertas versiones. Hoy en día los navegadores más usados se actualizan automáticamente y para ayudar con la comunidad web es mejor incentivar el uso de su tecnología y el uso de las ultimas versiones de los navegadores.<br>
+							- Buscar video y mostrar todos para que se vean los que no lo soportan.
+						</aside>
+					</section>
+					<section data-background-iframe="cat/cat.html">
+						<h3 id="css3-rwd">Responsive Web Design</h3>
+						<h4>RWD</h4>
+						<aside class="notes">
+							- Técnica que permite hacer páginas Web adaptables en función de la ventana de visualización (viewport) del dispositivo.<br>
+							- Dispositivos como TV, escritorio, móviles, tablets, ebooks, relojes...<br>
+							- 
+						</aside>
+					</section>	
+					<section data-state="css-sky">
+						<h3 id="css3-rwd-flexible">Responsive Web Design</h3>
+						<p>
+							Página flexible con min-width y unidades relativas (%)
+						</p>
+						<a href="http://material.io/resizer/#url=http%3A%2F%2Fsocial.develagora.com%2F" target="_blank">
+							<img src="img/flexible-develagora.PNG" alt="responsive">
+						</a>
+						<aside class="notes">
+							- Antes sólo teníamos diseños fluidos que permitían usar todo el ancho de la pantalla, haciendo uso de porcentajes (unidad relativa al contenedor) en lugar de pixeles (unidad absoluta). Pero aún así no eran fáciles de usar. Textos muy largos en televisiones, columnas laterales muy estrechas en móviles.
+						</aside>
+					</section>
+					<section data-state="css-sky">
+						<h3 id="css3-rwd-responsive">Responsive Web Design</h3>
+						<img src="img/css3.png" alt="CSS3 icon" class="css3-icon">
+						<p>
+							Página responsive con max-width y media-queries
+						</p>
+						<a href="http://material.io/resizer/#url=http%3A%2F%2Fdevelagora.com%2Fes" target="_blank">
+							<img src="img/rwd-develagora.PNG" alt="responsive">
+						</a>
+						<aside class="notes">
+							- Pero CSS3 nos proporcionó el uso de media queries y propiedades como max-width, que nos permiten adaptarnos a la ventana de visualización mediante CSS y HTML, y al uso de imagenes diferentes para diferentes resoluciones para no sobrecargar a los usuarios móviles. 
+
+						</aside>
+					</section>
+					<section data-state="css-sky">
+						<h3 id="css3-rwd-google">Responsive Web Design</h3>
+						<a href="https://search.google.com/search-console/mobile-friendly">
+							<img src="img/optimiza-web-movil.png" alt="Optimiza tu web para móviles">
+						</a>
+						<aside class="notes">
+							- El 57% de los usuarios abandonan las páginas si tardan más de 3 segundos en cargar.<br>
+							- Y Google no penaliza a las páginas optimizadas para móviles en sus buscadores.
+						</aside>
+					</section>
+					<section data-state="css-sky">
+						<h3 id="css3-rwd-how-to">Responsive Web Design</h3>
+						<span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#modal-rwd-how-to"></span>
+						<h4>¿Cómo se hace?</h4>
+						<ol>
+							<li>Ajustar ancho de la página al ancho del dispositivo
+							<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+							</li>
+							<li class="fragment">Añadir media queries para añadir estilos condicionales.
+							<pre><code>@media only screen and (max-width : 768px) {</code></pre>
+							</li>
+						</ol>
+						<aside class="notes">
+							- Ajustamos el ancho de la página al ancho del dispositivo.<br>
+							- Porque la mayoría de smartphones simulan tamaños de pantalla mayores, haciendo una especie de dimensiones virtuales que faciliten la lectura de webs que no están diseñadas para Responsive Web Design.<br>
+							- Las Media Queries son, consultas de las características del medio donde se está visualizando una web y nos sirven para definir estilos condicionales, que solo se aplicarán en caso que esa consulta del medio sea satisfactoria.<br>
+							- En este caso la query selecciona los pequeños dispositivos y tablets
+						</aside>
+					</section>
 				</section> 
 				<section data-markdown>
     				<script type="text/template">
@@ -220,6 +900,93 @@ La web no tiene límites
 					</script>
 				</section> 
 			</div>
+		</div>
+
+		<div class="modal fade" id="modal-html-cheatsheet" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+	      		  <h4>Referencias:</h4>
+			      <ul>
+			        <li>
+			        	<a href="img/html-cheat-sheet.png" target="_blank">Beginner's HTML CHEAT SHEET</a> 
+			        	realizado por <a href="https://websitesetup.org/html5-cheat-sheet/" target="_blank">WebsiteSetup</a>			      
+			        </li>
+			      	<li>
+				      	<a href="https://websitesetup.org/html-beginners-guide/" target="_blank">
+						Tutorial Paso a Paso de HTML
+						</a> para principiantes.
+						
+					</li>
+			      	<li>
+				      	<a href="https://www.w3.org/TR/html5/" target="_blank">Guía W3C the HTML</a>, 
+				      	con última actualización Octubre 2014.
+						
+					</li>
+			      </ul>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="modal-css-especifidad" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+	      		  <table><tbody><tr><th>Selectores</th>
+					<th>Especificidad</th>
+					</tr><tr><td>H1 {color: white;}</td>
+					<td>1</td>
+					</tr><tr><td>P EM {color: green;}</td>
+					<td>2</td>
+					</tr><tr><td>.grape {color: red;}</td>
+					<td>1,0</td>
+					</tr><tr><td>P.bright {color: blue;}</td>
+					<td>1,1</td>
+					</tr><tr><td>P.bright EM.dark {color: yellow;}</td>
+					<td>2,2</td>
+					</tr><tr><td>#id218 {color: brown;}</td>
+					<td>1,0,0</td>
+					</tr><tr><td>style=" "</td>
+					<td>1,0,0,0</td>
+					</tr></tbody>
+					</table>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="modal-html5-elements-support" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+	      		  <h4>Referencias:</h4>
+			      <ul>
+			        <li>
+			        	<a href="https://robertnyman.com/html5/" target="_blank">Información y ejemplos de HTML5 y sus nuevas APIs.</a> 
+			        </li>
+			        <li>
+			        	<a href="https://es.wikipedia.org/wiki/HTML5" target="_blank">HTML5 en Wikipedia</a>
+		        	</li>
+			      </ul>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="modal-rwd-how-to" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+	      		  <h4>Referencias:</h4>
+			      <ul>
+			        <li>
+			        	<a href="http://www.desarrolloweb.com/manuales/responsive-web-design.html" target="_blank">Tutorial Responsive Design de Desarrollo Web.</a> 
+			        </li>
+			        <li>
+			        	<a href="https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries" target="_blank">Default Sizes for Twitter Bootstrap’s Media Queries</a>
+		        	</li>
+			      </ul>
+		      </div>
+		    </div>
+		  </div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>

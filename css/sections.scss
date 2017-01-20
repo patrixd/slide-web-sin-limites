@@ -1,16 +1,95 @@
-.html-icon {
-	width: 25%;
-}
-.html-w3c-icon {
-	position:absolute;
-    width: 20%;
+
+/* Backgrounds */
+.animated-clouds .reveal 
+{ 
+    transition: 0s;
+	background-image: url(../img/bg-clouds.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 40s linear infinite;
+    background-color: #C0DFED;
 }
 
+.html-sky .reveal {
+	@include radial-gradient( #FFEBEE, #FFCDD2 );
+}
+.css-sky .reveal {
+	@include radial-gradient( #E3F2FD, #BBDEFB );
+}
+
+section {
+	&[data-state=animated-clouds] h2 {
+	    text-transform: inherit;
+	    font-weight: bold;
+	    color: #367693;
+	    letter-spacing: 0em;
+	}
+	.hello {
+	    background: rgba(0,0,0,.5);
+	    padding: 2em 3em;
+	    font-size: .9em;
+	    border-radius: 1%;
+	    margin-left: 45%;
+		width: 85%;
+		color: white;
+	    text-shadow: 1px 1px 7px black;
+	    .name {
+	        font-weight: bold;
+			font-size: 1.5em;
+	    }
+	    p {
+	    	font-size: .9em;
+	    }
+	}
+}
+
+
+/* Icons */
+.html-icon, .css-icon {
+	width: 25%;
+}
+.dom-icon, .html5-css3-js-icon {
+	width: 45%;
+}
+.html5-css3-js-icon {
+	width: 60%;
+}
+.html-w3c-icon, .css-w3c-icon, .dom-w3c-icon {
+	position:absolute;
+    width: 20%;
+
+}
+.html-icon, .html-w3c-icon,
+.css-icon, .css-w3c-icon,
+.dom-icon, .dom-w3c-icon {
+	display: inline-block;
+}
+.css3-icon {
+    position: absolute;
+    z-index: 2;
+    left: -20%;
+    width: 15%;
+    top: 0;
+}
+
+
+/* Iframes */
+.css-zen-iframe {
+	width: 100%;
+	height: 14em;
+}
+
+
+/* Preview Code */
 .reveal {
 	.html-preview-row {
 		width: 150%;
 	    margin-left: -25%;
         position: relative;
+        h4 {
+            text-decoration: underline;
+        }
 	}
 	pre.html-preview-code {
 	    min-height: 15em;
@@ -22,6 +101,9 @@
 	    pos: a;
 	    position: absolute;
 	    right: 0;
+	    @media screen and (max-width: 992px) {
+	    	position: relative;
+	    }
 	}
 	.html-preview-container {
 		font-family: initial;
@@ -29,5 +111,8 @@
 	    h1 {
 	        font-size: 2.6em;
 	    }
+	}
+	.html5-news-content {
+	    font-size: .8em;
 	}
 }
