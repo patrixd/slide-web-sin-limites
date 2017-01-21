@@ -26,6 +26,18 @@
 .start-bg .reveal {
 	background-color: #B6E3DE;
 }
+.influencers-bg {
+	@include radial-gradient( #D7CCC8 , #EFEBE9 );
+}
+.trends-bg {
+	@include radial-gradient( #FFCCBC , #FBE9E7 );
+}
+.examples-bg {
+	@include radial-gradient( #CFD8DC, #ECEFF1 );
+}
+.web-bg {
+	@include radial-gradient( #F1F8E9, #DCEDC8 );
+}
 
 
 section {
