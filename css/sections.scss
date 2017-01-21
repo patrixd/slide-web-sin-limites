@@ -95,10 +95,11 @@ section {
 }
 
 
-.twitter { background: url(/img/social/social-tw.png) 0 0 no-repeat; }
-.linkedin { background: url(/img/social/social-linkedin.png) 0 0 no-repeat; }
+.twitter { background: url(../img/social/social-tw.png) 0 0 no-repeat; }
+.linkedin { background: url(../img/social/social-linkedin.png) 0 0 no-repeat; }
+.develagora { background: url(../img/social/develagora.png) 0 0 no-repeat; }
 .reveal {
-	.twitter, .linkedin {
+	.twitter, .linkedin, .develagora {
 	    display: inline-block;
 	    width: 48px;
 	    height: 48px;

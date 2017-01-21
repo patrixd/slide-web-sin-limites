@@ -37,14 +37,16 @@
                         <img src="img/github_cat.png" alt="github image">
                     </a>
 				</section>
-				<section data-background="/img/foto2.jpg">
+				<section data-background="img/foto2.jpg">
 					<div class="hello col-sm-9 col-sm-offset-4">
 						<div class="name">
 							Patricia Juárez Muñoz
 						</div>
 						<div class="category text-faded">
 						    Ingeniera Software Senior<br>
-                            <a href="https://twitter.com/ccsakuweb" target="_blank" class="twitter" alt="Follow me on Twitter!">&nbsp;</a>&nbsp;&nbsp;<a href="http://www.linkedin.com/in/patriciajuarezmunoz" target="_blank" class="linkedin" alt="Contact me on Linkedin!">&nbsp;</a>
+							<a href="http://develagora.com" target="_blank" class="develagora" alt="Develagora">&nbsp;</a>&nbsp;&nbsp;
+                            <a href="https://twitter.com/ccsakuweb" target="_blank" class="twitter" alt="Follow me on Twitter!">&nbsp;</a>&nbsp;&nbsp;
+							<a href="http://www.linkedin.com/in/patriciajuarezmunoz" target="_blank" class="linkedin" alt="Contact me on Linkedin!">&nbsp;</a>
 						</div>
 						<hr class="light">
 						<p class="text-faded">
@@ -68,7 +70,7 @@
 				<section>
 					<section>
 						<h2 id="navegadores">Navegadores</h2>
-						<p><img src="/img/navegadores.png" alt="Navegadores"></p>
+						<p><img src="img/navegadores.png" alt="Navegadores"></p>
 						<aside class="notes">
 						- Las páginas webs las podemos ver gracias a los navegadores.<br>
 						- Los navegadores más usados son: Chrome, Firefox, Internet Explorer, Safari y Opera.<br>
@@ -78,7 +80,7 @@
 					</section>
 					<section>
 						<h3 id="navegadores">Navegadores</h3>
-						<p><img src="/img/que-es-navegador.png" alt="Que son los Navegadores"></p>
+						<p><img src="img/que-es-navegador.png" alt="Que son los Navegadores"></p>
 						<aside class="notes">
 						- Una página web es solo texto con referencias externas, 
 						los navegadores se encargan de interpretar su código, 
@@ -789,12 +791,11 @@ function saludar(nombre) {
 								</div>
 								<div class="col-xs-5 col-xs-offset-1 code-wrapper fragment">
 								<pre><code class="javascript">var contar = Contador();
-contar(); // devuelve 1
+contar(); // 1
 contar = Contador(10);
 
-contar(); // devuelve 11
-contar(); // devuelve 12
-
+contar(); // 11
+contar(); // 12
 </code></pre>
 								</div>
 							</div>
@@ -814,13 +815,11 @@ Contador.prototype = {
 								</div>
 								<div class="col-xs-5 col-xs-offset-1 code-wrapper fragment">
 								<pre><code class="javascript">var contador = Contador();
-contador.sumar(); // devuelve 1
-
+contador.sumar(); // 1
 
 contador = Contador(10);
-contar.sumar(); // devuelve 11
-contar.sumar(); // devuelve 12
-
+contar.sumar(); // 11
+contar.sumar(); // 12
 
 </code></pre>
 								</div>
@@ -1068,18 +1067,46 @@ contar.sumar(); // devuelve 12
 					</section>
                     <section>
                         <h3>EJEMPLOS</h3>
+                        <span class="glyphicon glyphicon-arrow-right point-help-icon bounce fragment" data-fragment-index="6"></span>
+						<span class="glyphicon glyphicon-question-sign" data-toggle="modal" data-target="#modal-ejemplos-web"></span>
                         <ul>
-                            <li>Páginas Web</li>
-                            <li class="fragment">Aplicaciones Escritorio</li>
-                            <li class="fragment">Aplicaciones Móviles</li>
-                            <li class="fragment">Juegos</li>
-                            <li class="fragment">Realidad Virtual</li>
-                            <li class="fragment">Internet of Things (IoT)</li>
+                            <li class="fragment" data-fragment-index="1">Páginas Web</li>
+                            <li class="fragment" data-fragment-index="2">Aplicaciones Web</li>
+                            <li class="fragment" data-fragment-index="2">Aplicaciones Escritorio</li>
+                            <li class="fragment" data-fragment-index="2">Aplicaciones Móviles</li>
+                            <li class="fragment" data-fragment-index="3">Juegos</li>
+                            <li class="fragment" data-fragment-index="4">Realidad Virtual</li>
+                            <li class="fragment" data-fragment-index="5">Internet of Things (IoT)</li>
                         </ul>
+                        <aside class="notes">
+                            - Este slide es una página web. Es estática porque sólo se compone de la parte de cliente descargada por el navegador. Otra página web es Wikipedia pero esa sí almacena los datos de forma permanente en un servidor, los usuarios colaboran y se define como estática.<br>
+                            - También se pueden hacer aplicaciones web, que permiten al usuario trabajar con aplicaciones pero desde el navegador. El usuario no tiene que navegar entre distintos documentos, todo es 1. Ejemplo: Gmal, Facebook.<br>
+                            - También con Javascript podemos programar aplicaciones de escritorio. Como el editor de texto Atom.<br>
+                            - Y seguro que tienes instalado en tu móvil una aplicación que en realidad es HTML5. Ejemplo: Facebook.<br>
+                            - O has jugado a juegos que no dependían de Flash. Pero aún hay más, HTML5 da soporte a Realidad Virtual, y gracias a NodeJS (Javascript) podemos hacer grandes cosas en Internet of Things.
+                        </aside>
                     </section>
                     <section>
                         <h3>EJEMPLOS</h3>
-                        <p>Juego - Canvas</p>
+                        <p>Aplicaciones de Escritorio - <a href="http://electron.atom.io/" target="_blank">Electron</a></p>
+                        <div class="row">
+                        	<div class="col-xs-3">
+                        		<a href="https://atom.io/" target="_blank" title="Atom"><img src="img/electron-apps/atom-icon.png"></a>
+                        	</div>
+                        	<div class="col-xs-3">
+                        		<a href="https://slack.com/" target="_blank" title="Slack"><img src="img/electron-apps/slack-icon.png"></a>
+                        	</div>
+                        	<div class="col-xs-3">
+                        		<a href="https://code.visualstudio.com/" target="_blank" title=""><img src="img/electron-apps/visual-studio-code-icon.png"></a>
+                        	</div>
+                        	<div class="col-xs-3">
+                        		<a href="https://code.visualstudio.com/" target="_blank"><img src="img/electron-apps/wordpress-com-icon.png"></a>
+                        	</div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>EJEMPLOS</h3>
+                        <p><a href="https://www.freeriderhd.com/t/1016-layers" target="_blank">Juego</a> - Canvas</p>
                         <img src="img/motocicleta-game.JPG" class="play" data-url="https://www.freeriderhd.com/t/1016-layers"/>
                         <img src="img/close-icon.png" class="close-iframe hidden"/>
                         <aside class="notes">
@@ -1089,7 +1116,7 @@ contar.sumar(); // devuelve 12
                     </section>
                     <section>
                         <h3>EJEMPLOS</h3>
-                        <p>Demo - WebGL/Audio - <a href="http://babylonjs.com" target="_blank">BabylonJS</a></p>
+                        <p><a href="http://babylonjs.com/Demos/Sponza/" target="_blank">Demo - WebGL/Audio - <a href="http://babylonjs.com" target="_blank">BabylonJS</a></p>
                         <img src="img/sponza.jpg" class="play" data-url="http://babylonjs.com/Demos/Sponza/"/>
                         <img src="img/close-icon.png" class="close-iframe hidden"/>
 
@@ -1098,6 +1125,16 @@ contar.sumar(); // devuelve 12
                             - Para facilitar las cosas, existen motores 3D que simplifican muchísimo el proceso.<br>
                             - Uno de ellos es BabylonJS, creado por Microsoft, y uno de los más utilizados.<br>
                             - Este motor te permite importar modelos 3D, incluir animaciones, luces, sombras, texturas, audios, y distintas técnicas de postprocesado de forma sencilla.<br>
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>EJEMPLOS</h3>
+                        <p><a href="http://beta.unity3d.com/jonas/DT2/" target="_blank">Juego</a> - <a href="https://unity3d.com/es/unity" target="_blank">Unity</a> exportado a HTML5</p>
+                        <img src="img/deadtrigger-unity.JPG" class="play" data-url="http://beta.unity3d.com/jonas/DT2/"/>
+                        <img src="img/close-icon.png" class="close-iframe hidden"/>
+                        <aside class="notes">
+                            - Unity permite programar en Javascript, pero es más limitado porque tiene formas de pago.<br>
+                            - Las ventajas que tiene es que te permite exportar a muchos dispositivos, incluido HTML5.<br>
                         </aside>
                     </section>
 				</section>
@@ -1671,6 +1708,70 @@ contar.sumar(); // devuelve 12
             </div>
           </div>
         </div>
+        <div class="modal fade" id="modal-ejemplos-web" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                  <h4>Referencias:</h4>
+                  <ul>
+                      <li>Páginas Web:
+                      	<ul>
+                      		<li>Crea tu blog con <a href="https://es.wordpress.org/" targe="_blank">Wordpress</a> en tu propio servidor PHP y base de datos MySQL, o en sus servidores de forma gratuita, <a href="https://es.wordpress.com/" target="_blank">Wordpress.com</a>.
+                      		</li>
+                      		<li>Si no quieres una base de datos y no dispones de acceso al servidor y quieres subirlo a Github Pages puedes usar un generador de páginas estáticas, que te permiten tener subpáginas y reutilizar templates. Ejemplo: <a href="https://jekyllrb.com/" target="_blank">Jekyll (Ruby)</a>, <a href="http://spress.yosymfony.com/" target="_blank">Spress (PHP)</a>, <a href="https://docpad.org/" target="_blank">Docpad (NodeJS)</a></li>
+                      		<li>Si quieres hacer una página single page te recomiendo <a href="http://alvarotrigo.com/fullPage/" target="_blank">FullPage</a>.</li>
+                      		<li>Si quieres hacer una presentación en HTML como esta usa <a href="http://lab.hakim.se/reveal-js/" target="_blank">Reveal JS</a>.</li>
+                      	</ul>
+                      </li>
+                      <li class="fragment">Frameworks para realizar Aplicaciones Web:
+                      	<ul>
+                      		<li>
+                      		    <a href="https://angularjs.org/" targe="_blank">AngularJS</a>.<br>
+                      			<a href="http://www.desarrolloweb.com/manuales/manual-angularjs.html" target="_blank">Tutorial de AngularJS de Desarrollo Web</a>.
+                      		</li>
+                      		<li>
+                      			<a href="https://facebook.github.io/react/" target="_blank">React</a>.<br>
+                      			<a href="https://www.adictosaltrabajo.com/tutoriales/introduccion-react/" target="_blank">Introducción a React</a>.
+                      		</li>
+                      		<li><a href="https://vuejs.org/" target="_blank">VueJS</a>.</li>
+                      		<li><a href="http://backbonejs.org/" target="_blank">BackboneJS</a>.</li>
+                      		<li><a href="http://emberjs.com/" target="_blank">EmberJS</a>.</li>
+                      	</ul>
+                      </li>
+                      <li class="fragment">Frameworks para realizar Aplicaciones Escritorio:
+                      	<ul>
+                      		<li>
+                      		    <a href="http://electron.atom.io/" targe="_blank">Electron</a> usa internamente Chromium y NodeJS, y ha sido desarrollado por Github, inicialmente para Atom.
+                      		</li>
+                      	</ul></li>
+                      <li class="fragment">Aplicaciones Móviles. Las más populares <a href="https://cordova.apache.org/" target="_blank">Apache Cordova</a> y <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>.</li>
+                      <li class="fragment">Han llegado los juegos a la web, ya no necesitamos programas externos para jugar con ellos, son realizados por motores 3D/2D que te permiten programar en Javascript o exportar a HTML5.
+                      	<ul>
+                      		<li><a href="https://unity3d.com/es/unity" target="_blank">Unity</a> permite programar en Javascript y C# (ve las diferencias <a href="https://unity3d.com/es/learn/tutorials/topics/scripting/c-vs-js-syntax?playlist=17117" target="_blank">aquí</a>, y <a href="https://github.com/drojdjou/J3D/wiki/Unity-exporter-tutorial" target="_blank">exportar a HTML5</a>.</li>
+                      		<li><a href="http://www.babylonjs.com/" target="_blank">BabylonJS</a> realizado por Microsoft, es un framework Javascript muy reconocido. (<a href="http://race.assassinscreedpirates.com/" target="_blank">Demo Assasin's Creed Pirates</a>)</li>
+                      		<li><a href="https://www.slant.co/topics/3777/versus/~babylon-js_vs_playcanvas_vs_whitestorm-js" target="_blank">Comparativa de Frameworks JS</a> para desarrollo de video juegos.</li>
+                      		<li><a href="http://www.gamepix.com/blog/the-big-list-of-html5-3d-games-engines/" target="_blank">Lista de desarrollo motores 3D para juegos en HTML5</a></li>
+                      		<li><a href="http://www.gamepix.com/blog/the-big-list-of-2d-html5-games-engines/" target="_blank">Lista de desarrollo motores 2D para juegos en HTML5</a></li>
+                      	</ul>
+
+                      </li>
+                      <li class="fragment">Realidad Virtual: La nueva API de la <a href="https://webvr.info/" target="_blank">Web VR</a> nos permite acceso a dispositivos de Realidad Virtual, como el <a href="https://www3.oculus.com/rift/" target="_blank">Oculus Rift</a>, <a href="https://www.vive.com/">HTC Vive</a>, <a href="http://www.samsung.com/global/galaxy/gear-vr/" target="_blank">Samsung Gear VR</a> o <a href="https://vr.google.com/cardboard/" target="_blank">Google CardBoard</a>, en el navegador.</li>
+                      <li class="fragment"><a href="http://www.postscapes.com/javascript-and-the-internet-of-things/" target="_blank">Guía Internet of Things (IoT) con javascript</a>.
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        #modal-ejemplos-web"></span>
+                        <ul>
+                            <li>Páginas Web</li>
+                            <li class="fragment">Aplicaciones Web</li>
+                            <li class="fragment">Aplicaciones Escritorio</li>
+                            <li class="fragment">Aplicaciones Móviles</li>
+                            <li class="fragment">Juegos</li>
+                            <li class="fragment">Realidad Virtual</li>
+                            <li class="fragment">Internet of Things (IoT)</li>
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 		<script>
