@@ -3,7 +3,18 @@
 Presentación de desarrollo web para Geek & Tech Girls por [Patricia Juarez](http://develagora.com)
 
 ### Autor
-[Patricia Juarez](http://develagora.com). Ingeniera Software Senior. Con experiencia en el desarrollo web desde el 2000.
+[Patricia Juarez](http://develagora.com) ([@ccsakuweb](http://twitter.com/ccsakuweb)). Ingeniera Software Senior. Con experiencia en el desarrollo web desde el año 2000.
+
+### Recursos externos
+- [HTML Elements Index](https://meiert.com/en/indices/html-elements/)
+- [CSS Properties Index](https://meiert.com/en/indices/css-properties/)
+- [Animatable by LeaVerou](https://github.com/leaverou/animatable)
+- [Image Effects by bennettfeely](https://github.com/bennettfeely/image-effects)
+- [Layers game by Graggen](https://www.freeriderhd.com/t/1016-layers)
+- [Demo Sponza](http://babylonjs.com/Demos/Sponza/)
+- [DeadTrigger2](http://beta.unity3d.com/jonas/DT2/)
+- [Materia Design Video](https://material.io/)
+- [Gráficas con Google Trends](https://www.google.es/trends/)
 
 
 ### Dependencias
