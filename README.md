@@ -1,9 +1,9 @@
 # No es solo texto y enlaces,
 ## La web no tiene límites
-Presentación de desarrollo web para Geek & Tech Girls por [Patricia Juarez](http://develagora.com)
+Presentación de desarrollo web para Geek & Tech Girls por [Patricia Juarez Muñoz](http://develagora.com)
 
 ### Autor
-[Patricia Juarez](http://develagora.com) ([@ccsakuweb](http://twitter.com/ccsakuweb)). Ingeniera Software Senior. Con experiencia en el desarrollo web desde el año 2000.
+[Patricia Juarez Muñoz](http://develagora.com) ([@ccsakuweb](http://twitter.com/ccsakuweb)). Ingeniera Software Senior. Con experiencia en el desarrollo web desde el año 2000.
 
 ### Recursos externos
 - [HTML Elements Index](https://meiert.com/en/indices/html-elements/)
